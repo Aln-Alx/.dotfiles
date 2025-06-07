@@ -9,4 +9,4 @@ This should be helpful for any outsiders trying to decipher my commit messages a
 ```[#CommitNum DAYOFWEEKACRONYMDDMMYY - ACTUALCOMMITMESSAGE ]```
 
 
-(CommitNum - Is the counot of what commit it is; DAYOFWEEKACRONYM is yk M for Monday, SU for Sunday etc, ddmmyy is just the regular format for dates and ACTUALCOMMITMESSAGE is the commit message if you couldn't guess)
+(CommitNum - Is the count of what commit it is; DAYOFWEEKACRONYM is yk M for Monday, SU for Sunday etc, DDMMYY is just the regular format for dates and ACTUALCOMMITMESSAGE is the commit message if you couldn't guess)
