@@ -24,6 +24,7 @@ alias edit_zshenv='nvim ~/.zshenv'
 alias edit_zshrc='nvim ~/.config/zsh/.zshrc'
 alias edit_ghostty.conf='nvim ~/.config/ghostty/config'
 alias resource_zsh='source ~/.config/zsh/.zshrc'
+alias update_all='sudo dnf update'
 alias cls='clear';
 alias ffetch='fastfetch';
 alias home='clear && fastfetch'
