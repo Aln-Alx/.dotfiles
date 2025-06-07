@@ -4,5 +4,9 @@ These are my dotfiles. (or at least the ones I could be bothered to push to gith
 ## My Commit format:
 ---
 This should be helpful for any outsiders trying to decipher my commit messages and also for me to make them at least seem consistent here it it is:
+
+
 ```[#CommitNum DAYOFWEEKACRONYMDDMMYY - ACTUALCOMMITMESSAGE ]```
+
+
 (CommitNum - Is the counot of what commit it is; DAYOFWEEKACRONYM is yk M for Monday, SU for Sunday etc, ddmmyy is just the regular format for dates and ACTUALCOMMITMESSAGE is the commit message if you couldn't guess)
