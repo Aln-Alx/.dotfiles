@@ -21,8 +21,11 @@ local options = {
 
 	smarttab = true, --indentation stuff
 	cindent = true,
-	autoindent = false,
+	autoindent = true,
+	shiftwidth = 4,
 	tabstop = 4, --visual width of tab
+	softtabstop = 2,
+	expandtab = false,
 
 	foldmethod = "expr",
 	foldlevel = 99, --disable folding, lower #s enable

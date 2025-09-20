@@ -4,8 +4,11 @@ export XDG_CONFIG_HOME="$HOME/.config"
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 export XDG_DATA_HOME="$XDG_CONFIG_HOME/local/share"
 export XDG_CACHE_HOME="$XDG_CONFIG_HOME/cache"
+export QT_QPA_PLATFORM=wayland
 export EDITOR="nvim"
 export VISUAL="nvim"
+export PATH="$PATH:$HOME/.cargo/bin"
+export PATH="$PATH:$HOME.local/bin"
 
 
 # [History]
@@ -24,22 +27,5 @@ alias edit_zshenv='nvim ~/.zshenv'
 alias edit_zshrc='nvim ~/.config/zsh/.zshrc'
 alias edit_ghostty.conf='nvim ~/.config/ghostty/config'
 alias resource_zsh='source ~/.config/zsh/.zshrc'
-alias update_all='sudo dnf update'
-alias cls='clear';
-alias ffetch='fastfetch';
+alias update_all='sudo dnf update && flatpak update'
 alias home='clear && fastfetch'
-		# Git:
-alias gs='git status';
-alias ga='git add';
-alias gp='git push';
-alias gpo='git push origin';
-alias gr='git branch -r';
-alias gplo='git pull origin';
-alias gb='git branch ';
-alias gc='git commit';
-alias gd='git diff';
-alias gco='git checkout';
-alias gl='git log';
-alias gr='git remote';
-alias grs='git remote show';
-

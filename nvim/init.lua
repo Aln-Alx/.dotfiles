@@ -31,6 +31,9 @@ Plug('numToStr/Comment.nvim') --easier comments
 Plug('norcalli/nvim-colorizer.lua') --color highlight
 Plug('ibhagwan/fzf-lua') --fuzzy finder and grep
 Plug('numToStr/FTerm.nvim') --floating terminal
+Plug("nvzone/volt") -- typr dependency
+Plug('nvzone/typr') -- nvim typing test
+Plug('MeanderingProgrammer/render-markdown.nvim') --render md inline
 
 vim.call('plug#end')
 
@@ -54,6 +57,8 @@ require("plugins.nvim-lint")
 require("plugins.nvim-tree")
 require("plugins.treesitter")
 require("plugins.which-key")
+require("plugins.typr")
+require("plugins.render-markdown")
 
 load_theme()
 
@@ -80,4 +85,5 @@ load_theme()
 --         ├── nvim-lint.lua
 --         ├── nvim-tree.lua
 --         ├── treesitter.lua
---         └── which-key.lua
+--         ├── which-key.lua
+--         └── typr.lua
