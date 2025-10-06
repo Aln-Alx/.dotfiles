@@ -14,7 +14,9 @@ local options = {
 	ttyfast = true, --faster scrolling
 	smoothscroll = true,
 	title = true, --automatic window titlebar
-	
+
+	spelllang = "en_gb", --spell check language
+	spell = true,  
 	number = true, --numbering lines
 	relativenumber = false, --toggle bound to leader nn
 	numberwidth = 4,
@@ -42,10 +44,14 @@ local options = {
 	splitkeep = 'screen', --stablizie window open/close
 }
 
+
 for k, v in pairs(options) do
 	vim.opt[k] = v
 end
 
+
 vim.diagnostic.config({
 	signs = false,
 })
+
+vim.cmd.colorscheme "catppuccin"
