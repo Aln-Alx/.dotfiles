@@ -41,9 +41,14 @@ Plug('numToStr/Comment.nvim') --easier comments
 Plug('norcalli/nvim-colorizer.lua') --color highlight
 Plug('ibhagwan/fzf-lua') --fuzzy finder and grep
 Plug('MeanderingProgrammer/render-markdown.nvim') --render md inline
-Plug('saghen/blink.cmp', { ['do'] = 'cargo build --release' } ) --{ ['tag'] = '1.*'} ) --code completion
-Plug('rafamadriz/friendly-snippets') --blink.cmp dependency
-Plug('L3MON4D3/LuaSnip') --blink.cmp dependency
+Plug('rafamadriz/friendly-snippets') -- snippet collection
+Plug('hrsh7th/nvim-cmp') -- cmp plugin
+Plug('neovim/nvim-lspconfig')
+Plug('hrsh7th/cmp-nvim-lsp')
+Plug('hrsh7th/cmp-buffer')
+Plug('hrsh7th/cmp-path')
+Plug('hrsh7th/cmp-cmdline')
+Plug('mfussenegger/nvim-lint')
 
 
 vim.call('plug#end')
@@ -70,7 +75,7 @@ require("plugins.lualine")
 require("plugins.nvim-lint")
 require("plugins.nvim-tree")
 require("plugins.treesitter")
-require("plugins.blink")
+require("plugins.cmp")
 
 
 -- ###################### --

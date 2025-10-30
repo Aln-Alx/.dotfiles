@@ -5,7 +5,7 @@
 
 # [Misc. Apearance]
 		# Font:
-font-family = Hurmit Nerd Font Mono
+font-family = Terminess Nerd Font Mono
 		# Cursor:
 shell-integration-features = no-cursor
 adjust-cursor-thickness = 12
@@ -16,7 +16,9 @@ maximize = true
 window-decoration = "none"
 window-padding-x = 10
 window-padding-y = 10,20
-# background-blur = true -- set to false because it doesn't look great with my wallpaper
+background-blur = true 
+#-- set to false because it doesn't look great with my wallpaper
+background-blur-radius = 20
 background-opacity = 0.3
 
 # [Custom-Keybinds]

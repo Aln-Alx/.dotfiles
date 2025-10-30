@@ -23,6 +23,9 @@ PROMPT="
    %F{blue}❯%f "
 RPROMPT="%F{blue}%*%f"
 
+
+bindkey '^[[3~' delete-char
+
 # [History Search]
 # Yeah I just plain stole this from Gemmi AI lol
 # Load the history-substring-search widget

@@ -42,6 +42,7 @@ local options = {
 	concealcursor = "nc",
 
 	splitkeep = 'screen', --stablizie window open/close
+	
 }
 
 
