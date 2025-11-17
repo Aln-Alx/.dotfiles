@@ -12,8 +12,13 @@ map("i", "<C-l>", "<Right>", { desc = "move right" })
 map("i", "<C-j>", "<Down>", { desc = "move down" })
 map("i", "<C-k>", "<Up>", { desc = "move up" })
 
-map("n", "<C-h>", "<cmd>bnext", { desc = "next buffer" })
-map("n", "<C-l>", "<cmd>bprevious", { desc = "previous buffer" })
+map("n", "<C-TAB>", "<cmd>bnext", { desc = "next buffer" })
+map("n", "<C-S-TAB>", "<cmd>bprevious", { desc = "previous buffer" })
+
+
+vim.keymap.set('n', 'd', '"_d')
+vim.keymap.set('n', '<Del>', '"_d')
+vim.keymap.set('i', '<Del>', '"_d')
 
 
 -- nvimtree

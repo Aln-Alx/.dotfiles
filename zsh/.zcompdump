@@ -1270,6 +1270,7 @@ _comps=(
 'rubber-pipe' '_rubber'
 'ruby' '_ruby'
 'ruby-mri' '_ruby'
+'ruff' '_ruff'
 'run0' '_run0'
 'run-help' '_run-help'
 'rup' '_hosts'
@@ -1354,7 +1355,6 @@ _comps=(
 'smit' '_smit'
 'smitty' '_smit'
 'snap' '_snap'
-'snapper' '_snapper'
 'snoop' '_snoop'
 'soa' '_hosts'
 'socket' '_socket'
@@ -1924,9 +1924,9 @@ autoload -Uz _bluetoothctl _bootctl _busctl _bwrap _coredumpctl \
             _kernel-install _konsole _krunner _kscreen-doctor _lf \
             _libinput _localectl _loginctl _networkctl _nvme \
             _oomctl _p11-kit _plasmashell _podman _pulseaudio \
-            _rclone _resolvectl _rg _run0 _sd_hosts_or_user_at_host \
-            _sd_machines _sd_outputmodes _sd_unit_files _skopeo _snap \
-            _snapper _systemctl _systemd _systemd-analyze _systemd-delta \
+            _rclone _resolvectl _rg _ruff _run0 \
+            _sd_hosts_or_user_at_host _sd_machines _sd_outputmodes _sd_unit_files _skopeo \
+            _snap _systemctl _systemd _systemd-analyze _systemd-delta \
             _systemd-inhibit _systemd-path _systemd-run _systemd-tmpfiles _systemsettings \
             _timedatectl _toolbox _trust _udevadm _udisks2 \
             _upower _varlinkctl _wl-copy _wl-paste _wpctl \

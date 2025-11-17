@@ -49,7 +49,8 @@ Plug('hrsh7th/cmp-buffer')
 Plug('hrsh7th/cmp-path')
 Plug('hrsh7th/cmp-cmdline')
 Plug('mfussenegger/nvim-lint')
-
+Plug('mason-org/mason.nvim')
+Plug('mason-org/mason-lspconfig.nvim')
 
 vim.call('plug#end')
 
@@ -72,10 +73,16 @@ require("plugins.comment")
 require("plugins.fzf-lua")
 require("plugins.gitsigns")
 require("plugins.lualine")
-require("plugins.nvim-lint")
+--require("plugins.nvim-lint")
 require("plugins.nvim-tree")
 require("plugins.treesitter")
 require("plugins.cmp")
-
+require("plugins.mason")
+require("plugins.mason-lspconfig")
 
 -- ###################### --
+--
+--
+vim.lsp.config('clangd', {
+  filetypes = { 'c', 'cpp' },
+})

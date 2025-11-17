@@ -9,9 +9,9 @@ require("cmp").setup({
       completion = cmp.config.window.bordered()
     },
     mapping = cmp.mapping.preset.insert({
-      ['<C-Space>'] = cmp.mapping.complete(),
-      ['<C-e>'] = cmp.mapping.abort(),
-      ['<CR>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
+		['<S-TAB>'] = cmp.mapping.select_prev_item(select_opts),
+		['<TAB>'] = cmp.mapping.select_next_item(select_opts),
+		['<CR>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
     }),
     sources = cmp.config.sources({
       { name = 'nvim_lsp' },
@@ -20,16 +20,7 @@ require("cmp").setup({
     })
   })
 
--- To use git you need to install the plugin petertriho/cmp-git and uncomment lines below
--- Set configuration for specific filetype.
---[[ cmp.setup.filetype('gitcommit', {
-    sources = cmp.config.sources({
-      { name = 'git' },
-    }, {
-      { name = 'buffer' },
-    })
- })
-
+--[[
    -- Use cmdline & path source for ':' (if you enabled `native_menu`, this won't work anymore).
  cmp.setup.cmdline(':', {
     mapping = cmp.mapping.preset.cmdline(),
@@ -45,7 +36,7 @@ require("cmp").setup({
 -- Set up lspconfig.
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
-require('lspconfig')['lint'].setup {
-	capabilities = capabilities
-}
-
+  vim.lsp.config('clangd', {
+    capabilities = capabilities
+  })
+  vim.lsp.enable('clangd')
